@@ -8,4 +8,4 @@ Insertion sort is a simple sorting algorithm that works the way we sort playing 
 Each time work only with the first i-1 element from of the array<br>
 Pick element arr[i] and insert it into sorted sequence in the array from 0 to i-1.<br>
 <h2>My try </h2>
-in the file <g>Checkpoint Sorting and searching.algo</g> you will finde my code with commentes to explique how it work
+in the file <i>Checkpoint Sorting and searching.algo</i> you will finde my code with commentes to explique how it work
