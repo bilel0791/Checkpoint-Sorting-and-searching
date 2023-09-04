@@ -1,0 +1,31 @@
+PROCEDURE insetElement(var arry ,element )
+VAR
+//counter
+    i,n :Integer;
+BEGIN
+    n := arry.lenght
+    i := n - 1
+//condition pour determiner lemplacement exacte ou on va inserer l'element et le tableau reste trié    
+    WHILE ( i >= 0 and arry[i] > element) DO
+         arry[i + 1] := arry[i];
+        i := i - 1
+    END_WHILE
+// insertion d'element dans le tableau     
+    arry[i + 1] := element;
+// afficher le taleau avec l'element ajouter     
+write(arry);
+END
+ALGORITHM Checkpoint Sorting and searching algorithms
+VAR
+//sorted array
+    soterdArry :ARRAY_OF INTEGER[10];
+//element to insert in the sorted array
+    element:Integer;
+BEGIN
+//lire le tableau
+read(soterdArry);
+//lire l'element a inserer dans le tableau    
+read(element);
+//appel de proceddure qui fait la tache dinsertion
+insetElement(storedArray,element);    
+END
